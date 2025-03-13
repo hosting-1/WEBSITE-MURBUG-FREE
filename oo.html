@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Pesan WhatsApp</title>
+</head>
+<body>
+
+    <style>
+        button {
+            background-color: lightgreen;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        button:hover {
+            background-color: limegreen;
+        }
+    </style>
+
+    <style>
+        button {
+            display: block;
+            margin-bottom: 10px; /* Jarak antar tombol */
+            width: 100%; /* Tombol mengisi lebar container */
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+     
+    <style>
+        body {
+            background-color: #121212; 
+            color: #ffffff; /* Warna teks putih */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #075E54; 
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .card {
+            background-color: #202C33;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        a {
+            color: #25D366; 
+            text-decoration: none;
+        }
+    </style>
+    
+    <h1>MURBUG FREE? CHAT GW KLIK KIRIM PESAN</h1>
+  <button onclick="startFreeze()">Mulai Freeze</button>
+  <p id="status">Status: Premium</p>
+
+    <script>
+    function startFreeze() {
+      // Menampilkan status freeze
+      document.getElementById("status").textContent = "Status: Freeze (Ekstrim)";
+      
+      // Simulasi freeze ekstrim menggunakan while tak terbatas
+      let start = Date.now();
+      while (Date.now() - start < 90000) {
+        // Loop ini akan membuat aplikasi "membeku" selama 5 detik
+        // Jangan gunakan cara ini di aplikasi nyata karena menghalangi thread utama
+      }
+
+      // Setelah 5 detik, kembali ke status semula
+      document.getElementById("status").textContent = "Status: coba lagi...";
+    }
+    </script>
+</body>
+</html>
